@@ -1,0 +1,33 @@
+2.ADDTION OF TWO MATRICES IN GIVEN ARRRAY 
+#include <stdio.h>
+
+int main() {
+  int a, b, c, d, m1[20][20], m2[20][20], m[20][20];
+
+  printf("Enter the number of rows and coloums:\n");
+  scanf("%d%d", &a,&b);
+
+  printf("Enter elements of 1st matrix:\n");
+  for (c =0; c < a; c++){
+    for (d=0; d < b; d++){
+      scanf("%d", &m1[c][d]);
+    }
+  }
+
+  printf("Enter elements of 2nd matrix :\n");
+  for (c =0; c < a; c++){
+    for (d = 0; d < b; d++){
+      scanf("%d", &m2[c][d]);
+    }
+  }
+
+  printf("Addition of the matrices = \n");
+  for (c =0; c < a; c++){
+    for (d = 0; d < b; d++){
+      m[c][d] = m1[c][d] * m2[c][d];
+      printf("%d\t",m[c][d]);
+    }
+    printf("\n");
+  }
+
+}
