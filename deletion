@@ -1,0 +1,27 @@
+4.DELETE AN ELEMENT IN GIVEN ARRAY AT SPECIFIC POSITION .
+#include<stdio.h>
+int main()
+{
+	int i,n,pos;
+	printf("enter the size: ");
+	scanf("%d",&n);
+	int a[n];
+	printf("enter the elements: ");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	printf("enter the postion to be deleted: ");
+	scanf("%d",&pos);
+	for(i=pos;i<n;i++)
+	{
+		a[i]=a[i+1];
+		n--;
+	}
+	printf("AFTER DELETION = : ");
+	for(i=0;i<n;i++)
+	{
+		printf("\t%d",a[i]);
+	}
+	
+}
